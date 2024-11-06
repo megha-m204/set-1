@@ -1,0 +1,14 @@
+#Taking 5 integers as input and finding the maximum
+def find_max():
+    print("Enter 5 integers:")
+    
+    num1 = int(input("Enter number 1: "))
+    max_num = num1  
+    
+    for i in range(2, 6):  
+        num = int(input(f"Enter number {i}: ")) 
+        if num > max_num:
+            max_num = num  
+    print("The maximum of the five numbers is:", max_num)
+
+find_max()
