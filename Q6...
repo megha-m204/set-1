@@ -1,0 +1,19 @@
+#program to print all unique numbers in an array:
+def print_unique_numbers(arr):
+
+    count = {}
+
+    for num in arr:
+        if num in count:
+            count[num] += 1
+        else:
+            count[num] = 1
+    
+    print("Unique numbers in the array are:")
+    for num, cnt in count.items():
+        if cnt == 1:
+            print(num)
+
+
+arr = list(map(int, input("Enter value for array: ").split()))
+print_unique_numbers(arr)
