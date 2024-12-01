@@ -1,0 +1,11 @@
+# Take input from the user in the form of an array
+
+numbers = list(map(int, input("Enter 5 integers separated by spaces: ").split()))
+
+if len(numbers) != 5:
+    print("Please enter exactly 5 integers.")
+else:
+    if numbers == numbers[::-1]:
+        print("The array is in palindrome order.")
+    else:
+        print("The array is not in palindrome order.")
